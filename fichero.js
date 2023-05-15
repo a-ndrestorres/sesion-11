@@ -1,15 +1,14 @@
 class Estudiante {
-    nombre;
+    nombre = "juan";
     asignaturas = ["javascript"," HTML " ,"CSS"];
-    constructor(nombre){
-        this.nombre = nombre;
-    }
+
     obtenDatos(){
-        let objeto = `mi nombre es ${this.nombre} y mis asignaturas son: ${this.asignaturas}`
-        return objeto
+       return  {
+        nombre: this.nombre,
+        asignaturas: this.asignaturas}
     }  
     
 }
 
-const nuevoObjeto = new Estudiante("juan")
+const nuevoObjeto = new Estudiante()
 console.log(nuevoObjeto.obtenDatos())
